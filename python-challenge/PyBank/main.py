@@ -15,8 +15,8 @@ profitlossdiff=0
 #read from csv file
 with open(csv_path,encoding='utf-8-sig') as csvfile:
     csvreader=csv.reader(csvfile,delimiter=',')
-    #delete header line to read from second row
-    next(csvreader, None)
+    #stores header
+    csv_header=next(csvreader)
     #loop to go through each row
     for row in csvreader:
         #count each row to find total months
