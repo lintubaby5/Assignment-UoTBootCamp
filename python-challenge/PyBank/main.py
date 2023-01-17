@@ -60,7 +60,7 @@ print(f"Greatest Increase in Profits : {Greatestmonth} (${Greatestincrease})")
 print(f"Greatest Decrease in Profits : {Smallestmonth} (${Smallestincrease})")
 
 #declare the text file to write the output to
-txtfilepath=os.path.join("outputPyBank.txt")
+txtfilepath=os.path.join(r"Analysis","outputPyBank.txt")
 with open(txtfilepath,'w') as txtfile:
     #write into the file
     txtfile.write("Financial Analysis\n")
